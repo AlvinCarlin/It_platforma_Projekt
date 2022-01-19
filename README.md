@@ -1,4 +1,4 @@
-# It platforma Projekt
+# IT platforma Projekt
 GitHub: https://github.com/AlvinCarlin/It_platforma_Projekt.git<br />
 Student: Alvin Carlin<br />
 Ovo je projekt za It platformu.<br />
