@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="title" content="Python za početnike" />
+        <meta name="author" content="Alvin Carlin" />
+        <meta name="keywords" content="Python, Verzije, Popis" />
+
+        <title>Python za početnike | Popis</title>
+        <link rel="icon" href="../multimedija/python-logo.png" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lora"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="../css/acarlin.css" />
+        <link rel="stylesheet" href="../css/acarlin_480.css" />
+        <link rel="stylesheet" href="../css/acarlin_481.css" />
+        <link rel="stylesheet" href="../css/acarlin_768.css" />
+        <link rel="stylesheet" href="../css/acarlin_992.css" />
+        <link rel="stylesheet" href="../css/acarlin_1024.css" />
+        <link rel="stylesheet" href="../css/acarlin_1200.css" />
+        <link rel="stylesheet" media="print" href="../css/acarlin_ispis.css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+        <link
+            rel="stylesheet"
+            href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
+        />
+        <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    </head>
+    <body>
+        <!-- Izbornik -->
+        <nav>
+            <ul class="nav-desktop">
+                <li><img src="../multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button"><a href="../index.html">Početna</a></li>
+                <li class="nav-button nav-button-active">
+                    <a href="popis.html">Popis</a>
+                </li>
+                <li class="nav-button">
+                    <a href="multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/obrazac.html">Obrazac</a>
+                </li>
+                <li class="nav-button-right">
+                    <a href="../obrasci/registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button-right">
+                    <a href="../obrasci/prijava.html">Prijava</a>
+                </li>
+            </ul>
+            <ul class="nav-mobile">
+                <li><img src="../multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button-right">
+                    <i class="fas fa-bars" onclick="showMobileNav()"></i>
+                </li>
+            </ul>
+            <ul id="nav-mobile-list" class="nav-mobile">
+                <li class="nav-button"><a href="../index.html">Početna</a></li>
+                <li class="nav-button nav-button-active">
+                    <a href="popis.html">Popis</a>
+                </li>
+                <li class="nav-button">
+                    <a href="multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/obrazac.html">Obrazac</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/prijava.html">Prijava</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <!-- Zaglavlje -->
+            <header class="hover-shadow header-main">
+                <h1 class="popis-title">Popis</h1>
+                <h3 class="popis-title">
+                    Ovdje je dostupan popis Vaših Python pitanja.
+                </h3>
+            </header>
+
+            <!-- Sadržaj -->
+
+            <!-- DIO: Članci-->
+            <section class="hover-shadow section-main">
+                <div class="col col-1 print-remove">
+                    <h2 class="section-title">Pitanja</h2>
+                    <hr class="hr-title" />
+                </div>
+
+                <div class="col col-1 col-1-higher">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Kategorija</th>
+                                <th class="mob-remove">Vrsta<br />problema</th>
+                                <th class="mob-remove">
+                                    Složenost<br />problema
+                                </th>
+                                <th>Opis problema</th>
+                                <th class="mob-remove">GitHub</th>
+                                <th class="mob-remove">Razina<br />iskustva</th>
+                                <th class="mob-remove">Priloženi<br />kod</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Osnovno</td>
+                                <td class="mob-remove">Sintaksa</td>
+                                <td class="mob-remove">1</td>
+                                <td class="table-desc">
+                                    Koji je ispravan način za iteriranje
+                                    rječnikom? Isprobao sam nekoliko varijanti,
+                                    no zaista nisam siguran koja je "najbolja".
+                                </td>
+                                <td class="mob-remove">www.github.com/user1</td>
+                                <td class="mob-remove">2</td>
+                                <td class="mob-remove">
+                                    <a href="popis.html">Preuzmi kod</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Osnovno</td>
+                                <td class="mob-remove">Semantika</td>
+                                <td class="mob-remove">2</td>
+                                <td class="table-desc">
+                                    Koja je razlika u značenju između: "import
+                                    numpy" i "from numpy import *".
+                                </td>
+                                <td class="mob-remove">www.github.com/user2</td>
+                                <td class="mob-remove">3</td>
+                                <td class="mob-remove">
+                                    <a href="popis.html">Preuzmi kod</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Algoritmi</td>
+                                <td class="mob-remove">Logika</td>
+                                <td class="mob-remove">3</td>
+                                <td class="table-desc">
+                                    Već nekoliko dana pokušavam implementirati
+                                    Dijkstrin algoritam, no negdje griješim.
+                                    Pomoć bi zaista dobro došla - svakako
+                                    preuzmite kod! Hvala!
+                                </td>
+                                <td class="mob-remove">www.github.com/user3</td>
+                                <td class="mob-remove">5</td>
+                                <td class="mob-remove">
+                                    <a href="popis.html">Preuzmi kod</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mrežno programiranje</td>
+                                <td class="mob-remove">Ostalo</td>
+                                <td class="mob-remove">4</td>
+                                <td class="table-desc">
+                                    Može li mi netko preporučiti najbolji način
+                                    za prijenos fotografija pomoću socketa?
+                                    Koristim TCP protokol, pogledajte kod da
+                                    dobijete kontekst.
+                                </td>
+                                <td class="mob-remove">www.github.com/user4</td>
+                                <td class="mob-remove">6</td>
+                                <td class="mob-remove">
+                                    <a href="popis.html">Preuzmi kod</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Paketi i moduli</td>
+                                <td class="mob-remove">Ostalo</td>
+                                <td class="mob-remove">1</td>
+                                <td class="table-desc">
+                                    Može li mi netko preporučiti neki paket za
+                                    "lijepi" ispis tablica u konzoli.
+                                </td>
+                                <td class="mob-remove">www.github.com/user5</td>
+                                <td class="mob-remove">3</td>
+                                <td class="mob-remove">
+                                    <a href="popis.html">Preuzmi kod</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Podnožje -->
+            <footer>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">Izradio</h1>
+                    <ul>
+                        <li><i class="fas fa-user-circle"></i> Alvin Carlin</li>
+                        <li><i class="fas fa-clock"></i>Izmjena: 19.01.2022</li>
+                        <li>
+                            <i class="fas fa-envelope"></i
+                            ><a href="mailto:alcarlin@vernnet.hr"
+                                >alcarlin@vernnet.hr</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">HTML5 Validator</h1>
+                    <figure>
+                        <img
+                            src="../multimedija/HTML5.png"
+                            alt="Ikona HTML5 Validatora"
+                        />
+                        <figcaption>Slika 2: HTML5 Validator</figcaption>
+                    </figure>
+                </div>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">CSS Validator</h1>
+                    <figure>
+                        <img
+                            src="../multimedija/CSS3.png"
+                            alt="Ikona CSS3 Validatora"
+                        />
+                        <figcaption>Slika 3: CSS3 Validator</figcaption>
+                    </figure>
+                </div>
+            </footer>
+        </div>
+
+        <!-- JS za prikaz navigacije unutar mobilnog prikaza -->
+        <script src="../js/showMobileNav.js"></script>
+        <script src="../js/acarlin_jquery.js"></script>
+    </body>
+</html>

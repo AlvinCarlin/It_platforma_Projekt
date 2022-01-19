@@ -1,0 +1,36 @@
+@media print {
+
+    @page { 
+        size: landscape;
+    }
+
+    *{
+        -webkit-print-color-adjust:exact !important;
+    }
+
+    body, .col-1{
+        background-color: white;
+    }
+
+    nav, header, footer, .hr-title, .section-title, .print-remove{
+        display: none;
+    }
+
+    table th{
+        background-color: gray;
+        color: black;
+    }
+
+    table tbody tr:nth-of-type(2n)>td{
+        background-color: white;
+        color: black;
+    }
+
+    table tbody tr:nth-of-type(2n+1)>td{
+        background-color: black;
+        color: white;
+    }
+
+ }
+ 
+ 

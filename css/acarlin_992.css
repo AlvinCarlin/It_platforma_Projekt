@@ -1,0 +1,24 @@
+@media (min-width: 992px) {
+    .nav-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .container {
+        width: 970px;
+    }
+
+    nav ul {
+        width: 970px;
+    }
+
+    table {
+        width: 870px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mob-remove {
+        display: none;
+    }
+}

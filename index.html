@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="title" content="Python za početnike" />
+        <meta name="author" content="Alvin Carlin" />
+        <meta name="keywords" content="Python, Programiranje, Početna" />
+
+        <title>Python za početnike | Početna</title>
+        <link rel="icon" href="multimedija/python-logo.png" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lora"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/acarlin.css" />
+        <link rel="stylesheet" href="css/acarlin_480.css" />
+        <link rel="stylesheet" href="css/acarlin_481.css" />
+        <link rel="stylesheet" href="css/acarlin_768.css" />
+        <link rel="stylesheet" href="css/acarlin_992.css" />
+        <link rel="stylesheet" href="css/acarlin_1024.css" />
+        <link rel="stylesheet" href="css/acarlin_1200.css" />
+    </head>
+    <body>
+        <!-- Izbornik -->
+        <nav>
+            <ul class="nav-desktop">
+                <li><img src="multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button nav-button-active">
+                    <a href="index.html">Početna</a>
+                </li>
+                <li class="nav-button">
+                    <a href="ostalo/popis.html">Popis</a>
+                </li>
+                <li class="nav-button">
+                    <a href="ostalo/multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="obrasci/obrazac.html">Obrazac</a>
+                </li>
+                <li class="nav-button-right">
+                    <a href="obrasci/registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button-right">
+                    <a href="obrasci/prijava.html">Prijava</a>
+                </li>
+            </ul>
+            <ul class="nav-mobile">
+                <li><img src="multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button-right">
+                    <i class="fas fa-bars" onclick="showMobileNav()"></i>
+                </li>
+            </ul>
+            <ul id="nav-mobile-list" class="nav-mobile">
+                <li class="nav-button nav-button-active">
+                    <a href="index.html">Početna</a>
+                </li>
+                <li class="nav-button">
+                    <a href="ostalo/popis.html">Popis</a>
+                </li>
+                <li class="nav-button">
+                    <a href="ostalo/multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="obrasci/obrazac.html">Obrazac</a>
+                </li>
+                <li class="nav-button">
+                    <a href="obrasci/registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="obrasci/prijava.html">Prijava</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <!-- Zaglavlje -->
+            <header class="hover-shadow header-main">
+                <h1 class="index-title">Početna</h1>
+                <h3 class="index-title">
+                    Pronađite odgovor na svoje pitanje vezano uz Python već
+                    danas!
+                </h3>
+            </header>
+
+            <!-- Sadržaj -->
+
+            <section class="hover-shadow section-main">
+                <div class="col col-2">
+                    <h2 class="section-title">O meni</h2>
+                    <hr />
+                    <ul>
+                        <li><i class="fas fa-user-circle"></i> Alvin Carlin</li>
+                        <li>
+                            <i class="fas fa-envelope"></i> alcarlin@vernnet.hr
+                        </li>
+                    </ul>
+                    <p id="quote">
+                        "Prvi doticaj s programiranjem imao sam u osnovnoj školi
+                        gdje smo pisali svoje prve linije u QBasicu te nešto
+                        sitno Python. Kasnije na faksu koristili smo: .NET, C++.
+                        Za web development koristili smo html, css, javascript,
+                        PHP. Trenutno radim u Javi (SpringBoot)"
+                    </p>
+                </div>
+                <div class="col col-2">
+                    <figure>
+                        <img
+                            src="multimedija/fotografija_acarlin.jpg"
+                            alt="Fotografija Alvin Carlin"
+                        />
+                        <figcaption>Slika 1: Alvin Carlin</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="hover-shadow">
+                <div class="col col-1">
+                    <h2 class="section-title">Članci</h2>
+                    <hr class="hr-title" />
+                </div>
+                <div class="col col-3">
+                    <article>
+                        <h4>Zamjena vrijednosti varijabli</h4>
+                        <hr />
+                        <p>
+                            Umjesto uvođenja pomoćne varijable isprobajte
+                            sljedeći trik:<br /><br />
+                            <span class="ex-code">
+                                x, y = 29, 147<br />
+                                x, y = y, x<br />
+                                print(x, y)<br />
+                                >> 147 29<br /><br />
+                            </span>
+                        </p>
+                        <button
+                            onclick="window.location.href = 'obrasci/obrazac.html';"
+                        >
+                            Pošalji upit
+                        </button>
+                        <hr />
+                        <hr class="hr-short" />
+                    </article>
+                </div>
+                <div class="col col-3">
+                    <article>
+                        <h4>Funkcija enumerate</h4>
+                        <hr />
+                        <p>
+                            Želite ispisati vrijednosti, ali i indekse elemenata
+                            liste? Isprobajte enumerate.<br /><br />
+                            <span class="ex-code">
+                                st = ["Marko", "Ivan"]<br />
+                                for i, s in enumerate(st):<br />
+                                &nbsp;&nbsp; print(i, student)<br />
+                                >> 1 Marko<br />
+                                >> 2 Ivan
+                            </span>
+                        </p>
+                        <button
+                            onclick="window.location.href = 'obrasci/obrazac.html';"
+                        >
+                            Pošalji upit
+                        </button>
+                        <hr />
+                        <hr class="hr-short" />
+                    </article>
+                </div>
+                <div class="col col-3">
+                    <article>
+                        <h4>Ispis sadržaja .txt datoteke</h4>
+                        <hr />
+                        <p>
+                            Ukoliko pokušavate ispisati sadržaj tekstualne
+                            datoteke isprobajte sljedeći kod:<br /><br />
+                            <span class="ex-code">
+                                with open("test.txt") as file:<br />
+                                &nbsp;&nbsp; for zapis in file:<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp; print(zapis)<br />
+                                <br />
+                            </span>
+                        </p>
+                        <button
+                            onclick="window.location.href = 'obrasci/obrazac.html';"
+                        >
+                            Pošalji upit
+                        </button>
+                        <hr />
+                        <hr class="hr-short" />
+                    </article>
+                </div>
+                <div class="col col-3">
+                    <article>
+                        <h4>List comprehensions</h4>
+                        <hr />
+                        <p>
+                            Jedna od ponajboljih stvari kod Pythona je upravo
+                            "List comprehension":<br /><br />
+                            <span class="ex-code">
+                                br = [x for x in range(0,10)]
+                                <br /><br /><br /><br />
+                            </span>
+                        </p>
+                        <button
+                            onclick="window.location.href = 'obrasci/obrazac.html';"
+                        >
+                            Pošalji upit
+                        </button>
+                        <hr />
+                        <hr class="hr-short" />
+                    </article>
+                </div>
+                <div class="col col-3">
+                    <article>
+                        <h4>Što je što?</h4>
+                        <hr />
+                        <p>
+                            Koji tip podataka želite prosljediti? Natuknite
+                            ...<br /><br />
+                            <span class="ex-code">
+                                def Add(x:int,y:int):<br />
+                                &nbsp;&nbsp;return x+y<br />
+                                <br /><br />
+                            </span>
+                        </p>
+                        <button
+                            onclick="window.location.href = 'obrasci/obrazac.html';"
+                        >
+                            Pošalji upit
+                        </button>
+                        <hr />
+                        <hr class="hr-short" />
+                    </article>
+                </div>
+                <div class="col col-3">
+                    <article>
+                        <h4>Imate dvije liste, želite rječnik?</h4>
+                        <hr />
+                        <p>
+                            Vjerovatno ste se susreli s trenutkom kada od dvije
+                            liste želite napraviti rječnik, učinite to s
+                            trikom:<br /><br />
+                            <span class="ex-code">
+                                k = [1, 2, 3]<br />
+                                v = ['a', 'b', 'c']<br />
+                                rj = dict(zip(k, v))<br />
+                            </span>
+                        </p>
+                        <button
+                            onclick="window.location.href = 'obrasci/obrazac.html';"
+                        >
+                            Pošalji upit
+                        </button>
+                        <hr />
+                        <hr class="hr-short" />
+                    </article>
+                </div>
+            </section>
+
+            <!-- Podnožje -->
+            <footer>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">Izradio</h1>
+                    <ul>
+                        <li><i class="fas fa-user-circle"></i> Alvin Carlin</li>
+                        <li>
+                            <i class="fas fa-clock"></i> Izmjena: 19.01.2022
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i
+                            ><a href="mailto:alcarlin@vernnet.hr"
+                                >alcarlin@vernnet.hr</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">HTML5 Validator</h1>
+                    <figure>
+                        <img
+                            src="multimedija/HTML5.png"
+                            alt="Ikona HTML5 Validatora"
+                        />
+                        <figcaption>Slika 2: HTML5 Validator</figcaption>
+                    </figure>
+                </div>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">CSS Validator</h1>
+                    <figure>
+                        <img
+                            src="multimedija/CSS3.png"
+                            alt="Ikona CSS3 Validatora"
+                        />
+                        <figcaption>Slika 3: CSS3 Validator</figcaption>
+                    </figure>
+                </div>
+            </footer>
+        </div>
+
+        <!-- JS za prikaz navigacije unutar mobilnog prikaza -->
+        <script src="js/showMobileNav.js"></script>
+    </body>
+</html>

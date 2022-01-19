@@ -1,0 +1,137 @@
+/*
+  --- CSS for ex. computer screens (min-width: 1024) ---
+*/
+
+@media (max-width: 480px) {
+    .container {
+        width: 480px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    #nav-mobile-list li {
+        width: 100%;
+    }
+
+    #nav-mobile-list {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        color: whitesmoke;
+    }
+
+    .nav-button-right {
+        margin-right: 15px;
+    }
+
+    .nav-button-active {
+        background-color: #ffda4d;
+    }
+
+    .nav-button-right:hover {
+        background-color: #ffda4d;
+        color: #353535;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+
+    .col-2 {
+        width: 100%;
+        background: #fff3c3;
+    }
+
+    .col-2 ul {
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+
+    button {
+        margin-left: 35%;
+    }
+
+    .header-main {
+        height: 250px;
+    }
+
+    .header-main h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .dark-blue {
+        background: #3882ff;
+    }
+
+    .dark-blue:hover {
+        background: #3882ff;
+    }
+
+    .label-format {
+        font-size: 12px;
+    }
+
+    .mob-remove {
+        display: none;
+    }
+
+    .mob-make-short {
+        height: 480px;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    .grid-header {
+        height: 250px;
+    }
+
+    .grid-header h1 {
+        font-size: 60px;
+    }
+
+    .photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header'
+            'title'
+            'one'
+            'two'
+            'three'
+            'four'
+            'five'
+            'title2'
+            'one-v'
+            'two-v'
+            'three-v'
+            'four-v'
+            'five-v'
+            'title3'
+            'one-a'
+            'two-a'
+            'three-a'
+            'four-a'
+            'five-a'
+            'foot';
+    }
+}

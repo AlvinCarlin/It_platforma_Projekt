@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="title" content="Python za početnike" />
+        <meta name="author" content="Alvin Carlin" />
+        <meta name="keywords" content="Python, Registracija, Register" />
+
+        <title>Python za početnike | Registracija</title>
+        <link rel="icon" href="../multimedija/python-logo.png" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lora"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="../css/acarlin.css" />
+
+        <link rel="stylesheet" href="../css/acarlin_480.css" />
+        <link rel="stylesheet" href="../css/acarlin_481.css" />
+        <link rel="stylesheet" href="../css/acarlin_768.css" />
+        <link rel="stylesheet" href="../css/acarlin_992.css" />
+        <link rel="stylesheet" href="../css/acarlin_1024.css" />
+        <link rel="stylesheet" href="../css/acarlin_1200.css" />
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+    </head>
+    <body>
+        <!-- Izbornik -->
+        <nav>
+            <ul class="nav-desktop">
+                <li><img src="../multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button"><a href="../index.html">Početna</a></li>
+                <li class="nav-button">
+                    <a href="../ostalo/popis.html">Popis</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../ostalo/multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button"><a href="obrazac.html">Obrazac</a></li>
+                <li class="nav-button-right nav-button-active">
+                    <a href="registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button-right">
+                    <a href="prijava.html">Prijava</a>
+                </li>
+            </ul>
+            <ul class="nav-mobile">
+                <li><img src="../multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button-right">
+                    <i class="fas fa-bars" onclick="showMobileNav()"></i>
+                </li>
+            </ul>
+            <ul id="nav-mobile-list" class="nav-mobile">
+                <li class="nav-button"><a href="../index.html">Početna</a></li>
+                <li class="nav-button">
+                    <a href="../ostalo/popis.html">Popis</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../ostalo/multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button"><a href="obrazac.html">Obrazac</a></li>
+                <li class="nav-button nav-button-active">
+                    <a href="registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button"><a href="prijava.html">Prijava</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <!-- Zaglavlje -->
+            <header class="hover-shadow header-main">
+                <h1 class="reg-title">Registracija</h1>
+                <h3 class="reg-title">
+                    Postanite dio naše male Python zajednice!
+                </h3>
+            </header>
+
+            <!-- Sadržaj -->
+
+            <section class="hover-shadow section-main">
+                <!-- Obrazac za registraciju -->
+                <div class="col col-2 col-2-higher">
+                    <h2 class="section-title">Registriraj se</h2>
+                    <hr />
+
+                    <form
+                        id="reg-form"
+                        method="get"
+                        name="reg-form"
+                        action="/action_page.php"
+                    >
+                        <label class="label-format" for="name">Ime: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="text"
+                            id="name"
+                            name="name"
+                            size="15"
+                            maxlength="25"
+                            placeholder="Ime"
+                            autocomplete="off"
+                        /><br />
+
+                        <label class="label-format" for="surname"
+                            >Prezime: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            size="20"
+                            maxlength="40"
+                            placeholder="Prezime"
+                        /><br />
+
+                        <label class="label-format" for="username"
+                            >Korisničko ime: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="text"
+                            id="username"
+                            name="username"
+                            size="20"
+                            maxlength="20"
+                            placeholder="Korisničko ime"
+                        /><br />
+
+                        <label class="label-format" for="birthday"
+                            >Datum rođenja: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="date"
+                            id="birthday"
+                            name="birthday"
+                        /><br />
+
+                        <label class="label-format" for="state">Država: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="text"
+                            id="state"
+                            name="state"
+                        /><br />
+
+                        <label class="label-format" for="email">E-mail: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="E-mail"
+                        /><br />
+
+                        <label class="label-format" for="password"
+                            >Lozinka: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="password"
+                            id="password"
+                            name="password"
+                            size="15"
+                            maxlength="20"
+                            placeholder="Lozinka"
+                        /><br />
+
+                        <label class="label-format" for="password-again"
+                            >Ponovite lozinku: </label
+                        ><br />
+                        <input
+                            class="reg-input"
+                            type="password"
+                            id="password-again"
+                            name="password-again"
+                            size="15"
+                            maxlength="20"
+                            placeholder="Lozinka"
+                        /><br />
+
+                        <button class="button-submit" type="submit">
+                            Registriraj se
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col col-2 col-2-higher">
+                    <figure>
+                        <img
+                            src="../multimedija/python-logo.png"
+                            alt="Python logo"
+                        />
+                        <figcaption>Slika 4: Python logo</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Podnožje -->
+            <footer>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">Izradio</h1>
+                    <ul>
+                        <li><i class="fas fa-user-circle"></i> Alvin Carlin</li>
+                        <li><i class="fas fa-clock"></i>Izmjena: 22.3.2019.</li>
+                        <li>
+                            <i class="fas fa-envelope"></i
+                            ><a href="mailto:alcarlin@vernnet.hr"
+                                >alcarlin@vernnet.hr</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">HTML5 Validator</h1>
+                    <figure>
+                        <img
+                            src="../multimedija/HTML5.png"
+                            alt="Ikona HTML5 Validatora"
+                        />
+                        <figcaption>Slika 2: HTML5 Validator</figcaption>
+                    </figure>
+                </div>
+                <div class="col col-3 dark-blue center">
+                    <h1 class="footer-title">CSS Validator</h1>
+                    <figure>
+                        <img
+                            src="../multimedija/CSS3.png"
+                            alt="Ikona CSS3 Validatora"
+                        />
+                        <figcaption>Slika 3: CSS3 Validator</figcaption>
+                    </figure>
+                </div>
+            </footer>
+        </div>
+
+        <!-- JS za prikaz navigacije unutar mobilnog prikaza -->
+        <script src="../js/showMobileNav.js"></script>
+        <script src="../js/acarlin_jquery.js"></script>
+    </body>
+</html>

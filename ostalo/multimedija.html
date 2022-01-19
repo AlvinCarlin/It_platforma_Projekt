@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="title" content="Python za početnike" />
+        <meta name="author" content="Alvin Carlin" />
+        <meta name="keywords" content="Python, Fotografije, Konferencije" />
+
+        <title>Python za početnike | Multimedija</title>
+        <link rel="icon" href="../multimedija/python-logo.png" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lora"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="../css/acarlin.css" />
+        <link rel="stylesheet" href="../css/acarlin_480.css" />
+        <link rel="stylesheet" href="../css/acarlin_481.css" />
+        <link rel="stylesheet" href="../css/acarlin_768.css" />
+        <link rel="stylesheet" href="../css/acarlin_992.css" />
+        <link rel="stylesheet" href="../css/acarlin_1024.css" />
+        <link rel="stylesheet" href="../css/acarlin_1200.css" />
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+    </head>
+    <body>
+        <!-- Izbornik -->
+        <nav>
+            <ul class="nav-desktop">
+                <li><img src="../multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button"><a href="../index.html">Početna</a></li>
+                <li class="nav-button"><a href="popis.html">Popis</a></li>
+                <li class="nav-button nav-button-active">
+                    <a href="multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/obrazac.html">Obrazac</a>
+                </li>
+                <li class="nav-button-right">
+                    <a href="../obrasci/registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button-right">
+                    <a href="../obrasci/prijava.html">Prijava</a>
+                </li>
+            </ul>
+            <ul class="nav-mobile">
+                <li><img src="../multimedija/python-logo.png" alt="" /></li>
+                <li class="nav-button-right">
+                    <i class="fas fa-bars" onclick="showMobileNav()"></i>
+                </li>
+            </ul>
+            <ul id="nav-mobile-list" class="nav-mobile">
+                <li class="nav-button"><a href="../index.html">Početna</a></li>
+                <li class="nav-button"><a href="popis.html">Popis</a></li>
+                <li class="nav-button nav-button-active">
+                    <a href="multimedija.html">Multimedija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/obrazac.html">Obrazac</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/registracija.html">Registracija</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../obrasci/prijava.html">Prijava</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- CSS Grid Section -->
+
+        <div class="container grid-container">
+            <div class="grid-header hover-shadow">
+                <h1 class="popis-title">Multimedija</h1>
+                <h3 class="popis-title">Fotografije, video, audio.</h3>
+            </div>
+
+            <div class="grid-title">
+                <h2 class="section-title">Zanimljivo</h2>
+                <hr class="grid-hr" />
+            </div>
+
+            <!-- Photos section -->
+
+            <div class="grid-1 photo">
+                <figure>
+                    <a href="https://en.wikipedia.org/wiki/Project_Jupyter"
+                        ><img
+                            src="../multimedija/jupyter-logo.png"
+                            alt="Ikona Jupyter Notebooka"
+                    /></a>
+                    <figcaption>Slika 3: Jupyter notebook</figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-2 photo">
+                <figure>
+                    <a
+                        href="https://numfocus.org/projects/scipy-1-0-16-years-in-the-making"
+                        ><img
+                            src="../multimedija/scipy-logo.png"
+                            alt="Ikona scipy"
+                    /></a>
+                    <figcaption>Slika 3: Scipy</figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-3 photo">
+                <figure>
+                    <a href="https://en.wikipedia.org/wiki/Matplotlib"
+                        ><img
+                            src="../multimedija/matplot-logo.png"
+                            alt="Ikona matplotlib"
+                    /></a>
+                    <figcaption>Slika 3: Matplotlib</figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-4 photo">
+                <figure>
+                    <a href="http://flask.pocoo.org/"
+                        ><img
+                            src="../multimedija/flask-logo.png"
+                            alt="Ikona Flask"
+                    /></a>
+                    <figcaption>Slika 3: Flask framework</figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-5 photo">
+                <figure>
+                    <a href="https://www.djangoproject.com/"
+                        ><img
+                            src="../multimedija/django-logo.png"
+                            alt="Ikona Django"
+                    /></a>
+                    <figcaption>Slika 3: Django framework</figcaption>
+                </figure>
+            </div>
+
+            <!-- Video section -->
+
+            <div class="grid-title-2">
+                <h2 class="section-title">Video zapisi</h2>
+                <hr class="grid-hr" />
+            </div>
+
+            <div class="grid-1-v video">
+                <iframe
+                    src="https://www.youtube.com/embed/hnDU1G9hWqU"
+                ></iframe>
+            </div>
+
+            <div class="grid-2-v video">
+                <iframe
+                    src="https://www.youtube.com/embed/SNTZpy0oDB8"
+                ></iframe>
+            </div>
+
+            <div class="grid-3-v video">
+                <iframe
+                    src="https://www.youtube.com/embed/D6esTdOLXh4"
+                ></iframe>
+            </div>
+
+            <div class="grid-4-v video">
+                <iframe
+                    src="https://www.youtube.com/embed/N4mEzFDjqtA"
+                ></iframe>
+            </div>
+
+            <div class="grid-5-v video">
+                <video controls>
+                    <source
+                        src="../multimedija/python-game.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </div>
+
+            <!-- Audio section -->
+
+            <div class="grid-title-3">
+                <h2 class="section-title">Audio zapisi</h2>
+                <hr class="grid-hr" />
+            </div>
+
+            <div class="grid-1-a audio">
+                <audio controls>
+                    <source src="../multimedija/audio1.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+
+            <div class="grid-2-a audio">
+                <audio controls>
+                    <source src="../multimedija/audio2.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+
+            <div class="grid-3-a audio">
+                <audio controls>
+                    <source src="../multimedija/audio3.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+
+            <div class="grid-4-a audio">
+                <audio controls>
+                    <source src="../multimedija/audio4.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+
+            <div class="grid-5-a audio">
+                <audio controls>
+                    <source src="../multimedija/audio5.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+
+            <div class="grid-footer">
+                <footer>
+                    <div class="col col-3 dark-blue center">
+                        <h1 class="footer-title">Izradio</h1>
+                        <ul>
+                            <li>
+                                <i class="fas fa-user-circle"></i> Alvin Carlin
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>Izmjena: 19.01.2022
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i
+                                ><a href="mailto:alcarlin@vernnet.hr"
+                                    >alcarlin@vernnet.hr</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-3 dark-blue center">
+                        <h1 class="footer-title">HTML5 Validator</h1>
+                        <figure>
+                            <img
+                                src="../multimedija/HTML5.png"
+                                alt="Ikona HTML5 Validatora"
+                            />
+                            <figcaption>Slika 2: HTML5 Validator</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col col-3 dark-blue center">
+                        <h1 class="footer-title">CSS Validator</h1>
+                        <figure>
+                            <img
+                                src="../multimedija/CSS3.png"
+                                alt="Ikona CSS3 Validatora"
+                            />
+                            <figcaption>Slika 3: CSS3 Validator</figcaption>
+                        </figure>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- JS za prikaz navigacije unutar mobilnog prikaza -->
+        <script src="../js/showMobileNav.js"></script>
+        <script src="../js/acarlin_jquery.js"></script>
+    </body>
+</html>

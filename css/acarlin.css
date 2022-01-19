@@ -1,0 +1,592 @@
+/*
+  --- GENERAL IMPLICIT SELECTORS ---
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbfb;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    color: #8b8b8b;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-size: 23px;
+}
+
+h4 {
+    color: #353535;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-style: normal;
+}
+
+figcaption {
+    color: #353535;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+}
+
+select {
+    width: 320px;
+}
+
+hr {
+    color: #353535;
+    opacity: 0.1;
+    border-width: 1px;
+    margin: 5% 7% 0 7%;
+}
+
+.hr-title {
+    color: #353535;
+    opacity: 0.1;
+    border-width: 1px;
+    margin: 1% 4% 0 4%;
+}
+
+.hr-short {
+    color: #353535;
+    opacity: 0.1;
+    border-width: 1px;
+    margin: 2% 15% 0 15%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+fieldset {
+    margin: 5% 7% 0 7%;
+}
+
+/*
+  Table CSS -----
+*/
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table th {
+    padding: 10px;
+}
+
+table td {
+    padding: 0 12px 0 12px;
+    background: #fbfbfb;
+}
+
+table td:hover {
+    background: rgb(211, 219, 224);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+thead tr {
+    background: #ffeb99;
+    color: #353535;
+}
+
+.table-desc {
+    width: 250px;
+    height: 100px;
+    text-align: justify;
+}
+
+textarea {
+    resize: none;
+    width: 330px;
+}
+/*
+.section-main{
+  background-color: green;
+  height: 380px;;
+  transition: box-shadow 0.5s ease-out;
+}*/
+
+article {
+    font-family: 'Lora', serif;
+    text-align: justify;
+    font-style: italic;
+    margin: 5% 7% 0 7%;
+    color: #353535;
+}
+
+.ex-code {
+    font-family: 'Courier', serif;
+    font-style: normal;
+    text-align: left;
+}
+
+button {
+    background-color: #ffda4d;
+    border: none;
+    color: #353535;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 30%;
+}
+
+.button-submit {
+    background-color: whitesmoke;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.label-format {
+    line-height: 30px;
+}
+
+/*
+  --- GENERAL USE CLASSES ---
+  Style for the common "items".
+  User defined classes and such.
+*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col {
+    position: relative;
+    float: left;
+    z-index: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+.dark-blue {
+    background: linear-gradient(#639fff, #3882ff);
+}
+
+.col-1 {
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.col-1-high {
+    height: 620px;
+}
+
+.col-1-higher {
+    height: 800px;
+}
+
+.col-2 {
+    width: 50%;
+    height: 480px;
+    background: linear-gradient(#ffeb99, #fff3c3);
+    text-align: center;
+}
+
+.col-2-high {
+    height: 600px;
+}
+
+.col-2-higher {
+    height: 670px;
+}
+
+.col-2-veryhigh {
+    height: 1050px;
+}
+
+.col-2 img {
+    width: 350px;
+    height: 350px;
+    transition: transform 0.5s;
+    margin: 12% auto 0 auto;
+}
+
+.col-2 ul {
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 50px;
+    list-style-type: none;
+    padding: 0;
+    margin: 5% auto 0 auto;
+    height: 30%;
+    width: 100%;
+}
+
+.col-2 img:hover {
+    transform: scale(1.1);
+}
+
+.col-2 ul li:nth-child(2) {
+    padding-left: 10%;
+}
+
+.col-2 ul li:nth-child(3) {
+    padding-left: 20%;
+}
+
+.col-3 {
+    width: calc(100% / 3);
+    height: 380px;
+    background-color: aliceblue;
+}
+
+.col-3:hover {
+    background-color: rgb(230, 237, 243);
+}
+
+/* .fas is a FontAwesome class*/
+.fas {
+    font-size: 40px;
+    vertical-align: middle;
+    padding: 0 18px 0 18px;
+}
+
+/*
+  --- NAVBAR ---
+  Style of the navbar.
+*/
+
+nav {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(#3882ff, #639fff);
+    z-index: 2;
+}
+
+nav ul {
+    opacity: 0.98;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    margin: 0 auto;
+}
+
+nav li {
+    list-style-type: none;
+    display: block;
+    padding: 0 15px 0 15px;
+    transition: background-color 0.5s ease-out;
+    float: left;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fbfbfb;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+nav li img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    padding: 13px 0 10px 0;
+}
+
+.nav-button-right {
+    float: right;
+    padding: 0 15px 0 15px;
+    margin: 0;
+}
+
+.nav-button-active {
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: #fbfbfb;
+    padding-bottom: 5px;
+    line-height: 50px;
+}
+
+.nav-button:hover {
+    background-color: #ffda4d;
+}
+
+.nav-button-right:hover {
+    background-color: #37e84f;
+}
+
+nav li:hover a {
+    color: #353535;
+}
+
+/*
+  --- HEADER ---
+  Style for the header.
+*/
+
+.header-main {
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+    height: 400px;
+    background-color: aliceblue;
+    transition: box-shadow 0.5s ease-out;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 120px;
+    color: #353535;
+    margin-bottom: 0;
+}
+
+/*
+  --- CONTENT ---
+*/
+
+#quote {
+    font-family: 'Lora', serif;
+    text-align: justify;
+    font-style: italic;
+    margin: 5% 7% 0 7%;
+    color: #353535;
+    background-color: #fbfbfb;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    color: #353535;
+    margin-bottom: 0;
+}
+
+.reg-input {
+    width: 300px;
+}
+
+/*
+  --- FOOTER  ---
+*/
+
+footer img {
+    width: 130px;
+    height: 130px;
+}
+
+.footer-title {
+    color: #353535;
+    font-family: 'Roboto', serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer figure {
+    height: 70%;
+}
+
+footer .col-3 {
+    height: 250px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #353535;
+}
+
+footer ul {
+    color: #353535;
+    list-style: none;
+    line-height: 50px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.grid-header {
+    grid-area: header;
+    text-align: center;
+    padding-top: 60px;
+    height: 400px;
+    background-color: aliceblue;
+    transition: box-shadow 0.5s ease-out;
+}
+
+.grid-header h1 {
+    font-size: 120px;
+    color: #353535;
+    margin-bottom: 0;
+}
+
+.grid-title {
+    grid-area: title;
+    text-align: center;
+    margin-bottom: 0;
+    background: #fff3c3;
+}
+
+.grid-title-2 {
+    grid-area: title2;
+    text-align: center;
+    margin-bottom: 0;
+    background: #fff3c3;
+}
+
+.grid-title-3 {
+    grid-area: title3;
+    text-align: center;
+    margin-bottom: 0;
+    background: #fff3c3;
+}
+
+.grid-1 {
+    grid-area: one;
+}
+
+.gird-2 {
+    grid-area: two;
+}
+
+.grid-3 {
+    grid-area: three;
+}
+
+.grid-4 {
+    grid-area: four;
+}
+
+.grid-5 {
+    grid-area: five;
+}
+
+.grid-1-v {
+    grid-area: one-v;
+}
+
+.grid-2-v {
+    grid-area: two-v;
+}
+
+.grid-3-v {
+    grid-area: three-v;
+}
+
+.grid-4-v {
+    grid-area: four-v;
+}
+
+.grid-5-v {
+    grid-area: five-v;
+}
+
+.grid-1-a {
+    grid-area: one-a;
+}
+
+.grid-2-a {
+    grid-area: two-a;
+}
+
+.grid-3-a {
+    grid-area: three-a;
+}
+
+.grid-4-a {
+    grid-area: four-a;
+}
+
+.grid-5-a {
+    grid-area: five-a;
+}
+
+.grid-5-a {
+    grid-area: five-a;
+}
+
+.grid-footer {
+    grid-area: foot;
+}
+
+.photo {
+    height: 230px;
+    width: 250px;
+    background: #fff3c3;
+    text-align: center;
+}
+
+.audio {
+    height: 160px;
+    width: 100%;
+    background: #fff3c3;
+    text-align: center;
+}
+
+.audio audio {
+    width: 90%;
+    padding: 30px 10px 0 10px;
+}
+
+.video {
+    text-align: center;
+    margin-bottom: 0;
+    background: #fff3c3;
+    height: 500px;
+}
+
+.video iframe {
+    margin-top: 30px;
+    width: 60%;
+    height: 400px;
+}
+
+.video video {
+    margin-top: 30px;
+    width: 60%;
+    height: 400px;
+}
+
+.photo img {
+    padding-top: 30px;
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.grid-hr {
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'title title title title title'
+        'one two three four five'
+        'title2 title2 title2 title2 title2'
+        'one-v one-v one-v one-v one-v'
+        'two-v two-v two-v two-v two-v'
+        'three-v three-v three-v three-v three-v'
+        'four-v four-v four-v four-v four-v'
+        'five-v five-v five-v five-v five-v'
+        'title3 title3 title3 title3 title3'
+        'one-a two-a three-a four-a five-a'
+        'foot foot foot foot foot';
+}

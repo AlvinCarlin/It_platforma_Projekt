@@ -1,0 +1,30 @@
+/*
+  --- CSS for ex. computer screens (min-width: 1024) ---
+*/
+
+@media (min-width: 1024px) {
+    .nav-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .container {
+        width: 1024px;
+    }
+
+    nav ul {
+        width: 1024px;
+    }
+
+    .grid-container {
+        width: 1024px;
+    }
+
+    .label-format {
+        font-size: 16px;
+    }
+
+    table {
+        width: 950px;
+    }
+}
