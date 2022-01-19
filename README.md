@@ -5,7 +5,7 @@ Ovo je projekt za It platformu.<br />
 
  <h2>Početna stranica</h2>       
 <ol type="I"> 
-    <li>PNekoliko podataka o meni</li>
+    <li>Nekoliko podataka o meni</li>
       <li>Nekoliko članaka preko kojih se može doći do stranice Obrasci u kojem šaljete upit</li>
 </ol>
 
