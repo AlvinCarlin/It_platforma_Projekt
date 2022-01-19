@@ -1,7 +1,10 @@
 # It platforma Projekt
+GitHub: https://github.com/AlvinCarlin/It_platforma_Projekt.git
 Student: Alvin Carlin<br />
 Ovo je projekt za It platformu.<br />
-
+<h2>Opis projekta</h2>
+<p> Ovo je projekt posvećen programskom jeziku Pythonu. 
+</p>
 
  <h2>Početna stranica</h2>       
 <ol type="I"> 
