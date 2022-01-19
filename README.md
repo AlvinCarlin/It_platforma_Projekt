@@ -1,4 +1,4 @@
-# It_platforma_Projekt
+# It platforma Projekt
 Student: Alvin Carlin<br />
 Ovo je projekt za It platformu.<br />
 
